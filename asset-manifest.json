@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/CSS-Text-Manipulaor/static/css/main.ba87bd2d.chunk.css",
+    "main.js": "/CSS-Text-Manipulaor/static/js/main.1e651c1b.chunk.js",
+    "main.js.map": "/CSS-Text-Manipulaor/static/js/main.1e651c1b.chunk.js.map",
+    "runtime-main.js": "/CSS-Text-Manipulaor/static/js/runtime-main.9b727163.js",
+    "runtime-main.js.map": "/CSS-Text-Manipulaor/static/js/runtime-main.9b727163.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/CSS-Text-Manipulaor/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.84b884d0.chunk.js": "/CSS-Text-Manipulaor/static/js/2.84b884d0.chunk.js",
+    "static/js/2.84b884d0.chunk.js.map": "/CSS-Text-Manipulaor/static/js/2.84b884d0.chunk.js.map",
+    "index.html": "/CSS-Text-Manipulaor/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/CSS-Text-Manipulaor/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.ba87bd2d.chunk.css.map": "/CSS-Text-Manipulaor/static/css/main.ba87bd2d.chunk.css.map",
+    "static/js/2.84b884d0.chunk.js.LICENSE.txt": "/CSS-Text-Manipulaor/static/js/2.84b884d0.chunk.js.LICENSE.txt",
+    "static/media/csslogo.19c8605d.png": "/CSS-Text-Manipulaor/static/media/csslogo.19c8605d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9b727163.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.84b884d0.chunk.js",
+    "static/css/main.ba87bd2d.chunk.css",
+    "static/js/main.1e651c1b.chunk.js"
+  ]
+}
