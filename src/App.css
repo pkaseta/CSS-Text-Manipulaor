@@ -84,6 +84,32 @@
   margin-bottom: 15px; */
   
 }
+.background{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: black;
+  opacity: 0.9;
+  z-index: 20;
+  height: 100%;
+  width: 100%;
+}
+.betaWarning{
+  position: fixed;
+  margin-top: 50px;
+  margin-left: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 30;
+  background-color: white;
+  color: #282c34;
+  height: 40%;
+  width: 60%;
+}
 
  /* Animations */
  /* ------------------------------------- */
@@ -94,7 +120,7 @@
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
-    typing 3s steps(25, end),
+    typing 2.3s steps(25, end),
     blink-caret .5s step-end infinite;
 }
 

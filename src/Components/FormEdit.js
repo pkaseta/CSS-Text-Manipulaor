@@ -14,6 +14,8 @@ function FormEdit() {
     const [glitch, setGlitch] = useState(false)
     const [loading, setloading] = useState(false)
     console.log(exampleText)
+    const background = document.querySelector(".background")
+    const betaWarning = document.querySelector(".betaWarning")
     return (
         <div>
             <Form className="formDiv">
@@ -56,11 +58,11 @@ function FormEdit() {
                     </Form.Group>
                 </Form>
                 <Form.Group controlId="formBasicCheckbox">
+                    <Form.Label style={{ margin: "auto", textDecoration: "underline" }}>Animations</Form.Label>
                     <Form.Check type="checkbox" label="Typewriter Animation" onChange={() => setTypewriter(!typewriter)} />
                     <Form.Check type="checkbox" label="Neon Sign" onChange={() => setNeon(!neon)} />
                     <Form.Check type="checkbox" label="Glitchy Text" onChange={() => setGlitch(!glitch)} />
                     <Form.Check type="checkbox" label="Loading" onChange={() => setloading(!loading)} />
-                    <Form.Check type="checkbox" label="Text Animations" />
                 </Form.Group>
             </Form>
             {}
@@ -81,7 +83,8 @@ function FormEdit() {
 
             <h3 style={{ textAlign: "center", marginTop: "10px" }}>CSS Code</h3>
             <div className="cssCodeContainer">
-                <p>
+                <h2 style={{ textAlign: "center" }}>This will display all CSS code for the options selected. Coming Soon</h2>
+                {/* <p>
                     {".className" + " \{"}
                     < br />
                     {textColor ? "color:" + textColor + ";" : ''}
@@ -93,7 +96,7 @@ function FormEdit() {
                     {fontFamily !== "none" ? "fontFamily:" + fontFamily + ";" : ''}
                     <br />
                     {"\}"}
-                </p>
+                </p> */}
             </div>
         </div >
     )
