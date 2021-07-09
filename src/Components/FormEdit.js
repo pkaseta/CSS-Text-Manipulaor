@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Form, Button } from 'react-bootstrap'
 import FontsArray from './FontsArray'
 import classnames from 'classnames'
-
+//Delete after test
 function FormEdit() {
     const [exampleText, setExampleText] = useState('' ? "Text" : "Text")
     const [fontSize, setFontSize] = useState(20)
