@@ -18,6 +18,21 @@ function FormEdit() {
     const betaWarning = document.querySelector(".betaWarning")
     return (
         <div>
+            <div className={loading !== true ? "textContainer" : "loadingTextContainer"}
+                style={{
+                    fontFamily: fontFamily,
+                    color: textColor,
+                    backgroundColor: backgroundColor,
+                    fontSize: fontSize + "px"
+                }}>
+                <div className={classnames({
+                    "typewriter": typewriter,
+                    "neon": neon,
+                    "glitch": glitch,
+                    "loading": loading,
+                })}>{loading ? (<span>{exampleText}</span>) : <p>{exampleText}</p>}</div>
+            </div>
+
             <Form className="formDiv">
                 <Form.Group style={{ textAlign: "center" }} controlId="exampleForm.ControlTextarea1">
                     <Form.Label >Text</Form.Label>
@@ -28,13 +43,13 @@ function FormEdit() {
                 </Form.Group>
                 <Form.Group style={{ textAlign: "center" }} controlId="exampleForm.ControlInput1">
                     <Form.Label>Text Color</Form.Label>
-                    <Form.Control style={{ textAlign: "center" }} type="text" placeholder="black" onChange={(e) => {
+                    <Form.Control style={{ textAlign: "center" }} type="text" placeholder="black, hex, rgb" onChange={(e) => {
                         setTextColor(e.target.value)
                     }} />
                 </Form.Group>
                 <Form.Group style={{ textAlign: "center" }} controlId="exampleForm.ControlInput1">
                     <Form.Label>Background Color</Form.Label>
-                    <Form.Control style={{ textAlign: "center" }} type="text" placeholder="white" onChange={(e) => {
+                    <Form.Control style={{ textAlign: "center" }} type="text" placeholder="white, hex, rgb" onChange={(e) => {
                         setbackgroundColor(e.target.value)
                     }} />
                 </Form.Group>
@@ -65,21 +80,7 @@ function FormEdit() {
                     <Form.Check type="checkbox" label="Loading" onChange={() => setloading(!loading)} />
                 </Form.Group>
             </Form>
-            {}
-            <div className={loading !== true ? "textContainer" : "loadingTextContainer"}
-                style={{
-                    fontFamily: fontFamily,
-                    color: textColor,
-                    backgroundColor: backgroundColor,
-                    fontSize: fontSize + "px"
-                }}>
-                <div className={classnames({
-                    "typewriter": typewriter,
-                    "neon": neon,
-                    "glitch": glitch,
-                    "loading": loading,
-                })}>{loading ? (<span>{exampleText}</span>) : <p>{exampleText}</p>}</div>
-            </div>
+
 
             <h3 style={{ textAlign: "center", marginTop: "10px" }}>CSS Code</h3>
             <div className="cssCodeContainer">
